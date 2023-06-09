@@ -1,0 +1,76 @@
+<div class="container  mx-auto ">
+    <div class="p-2 m-2 flex gap-5 text-xl bg-black text-white rounded shadow-lg">
+      <a href="./admin/createUser" class="hover:text-blue-700">CreateUser</a>
+      <a href="./admin/donation" class="hover:text-blue-700">Donation</a>
+      <a href="./login" class="hover:text-blue-700">Log Out</a>
+    </div>
+  </div>
+  
+  <!-- <div>
+    <router-outlet> </router-outlet>
+  </div> -->
+
+
+
+  <div class="container mx-auto ">
+    <div class="block  container mx-auto text-center bg-white  p-2 shadow-2xl content-center rounded col-span-3">
+        <form>
+            <div class="border-purple-500 border-2 p-5 mb-2">
+                <ng-container formGroupName="stuDetails">
+                    <!----------------------- Full Name -------------------->
+                    <p class="text-left pl-12 font-bold text-gray-400 ">Full Name:</p>
+
+                    <ng-container formGroupName="fullName">
+                        <div class="grid grid-cols-1 md:grid-cols-3">
+                            <div>
+                                <input type="text" placeholder="First Name"
+                                    class="border-gray-400 border-b-2 m-3 p-1 rounded w-auto hover:border-l-8 hover:border-purple-600"
+                                    formControlName="fname">
+                            </div>
+
+                            <div>
+                                <input type="text" placeholder="Middle Name"
+                                    class="border-gray-400 border-b-2 m-3 p-1 rounded w-auto hover:border-l-8 hover:border-purple-600"
+                                    formControlName="mname">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Last Name"
+                                    class="border-gray-400 border-b-2 m-3 p-1 rounded w-auto hover:border-l-8 hover:border-purple-600"
+                                    formControlName="lname">
+
+                            </div>
+                        </div>
+                    </ng-container>
+                    <!----------------------------------- Address  -------------------------------->
+                    <p class="text-left pl-12 font-bold text-gray-400 ">Address :</p>
+                    <ng-container formGroupName="addr">
+
+                        <div class="grid grid-cols-1 md:grid-cols-4">
+                            <div>
+                                <input type="text" placeholder="City"
+                                    class="border-gray-400 border-b-2 m-3 p-1 rounded " formControlName="city">
+                            </div>
+
+                            <div>
+                                <input type="text" placeholder="State"
+                                    class="border-gray-400 border-b-2 m-3 p-1 rounded " formControlName="state">
+                            </div>
+
+                            <div>
+                                <input type="text" placeholder="Country"
+                                    class="border-gray-400 border-b-2 m-3 p-1 rounded " formControlName="country">
+                            </div>
+
+                            <div>
+                                <input type="text" placeholder="Pin Number"
+                                    class="border-gray-400 border-b-2 m-3 p-1 rounded " formControlName="pin">
+                            </div>
+                        </div>
+                    </ng-container>
+                </ng-container>
+            </div>
+           
+            <br>
+        </form>
+
+    </div>
